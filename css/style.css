@@ -1,0 +1,10 @@
+body{
+    color: brown;
+    margin: 0;
+    padding: auto;
+}
+.wrapper{
+    background-color: firebrick;
+    width: 1140px;
+    height: 300vh;
+}
