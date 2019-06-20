@@ -11,7 +11,7 @@
   <body>
     <div class="container" id="container">
       <div class="form-container sign-up-container">
-        <form action="#">
+        <form action="#" onsubmit="return check_Info()">
           <h1>Create Account</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -19,17 +19,27 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your email for registration</span>
-          <input type="text" placeholder="Name" />
-          <input type="text" placeholder="Surname" />
-          <input type="age" placeholder="Age" />
-           <input type="password" placeholder="Create new Password" />
-          <input type="password" placeholder="Confirm Password" />
+          <input type="text" placeholder="Name" id="userName" />
+          <input type="text" placeholder="Surname" id="surName" />
+          <input type="age" placeholder="Age" id="age" />
+          <input
+            type="password"
+            placeholder="Create new Password"
+            name="createPassword"
+            id="createPassword"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confirmPassword"
+            id="confirmPassword"
+          />
           <button>Sign Up</button>
         </form>
       </div>
 
       <div class="form-container sign-in-container">
-        <form action="#">
+        <form action="#" onsubmit="return check_info()">
           <h1>Sign In</h1>
           <div class="social-container">
             <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -37,10 +47,19 @@
             <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
           </div>
           <span>or use your account</span>
-          <input type="text" placeholder="Name" />
-          <input type="password" placeholder="Password" />
+          <input
+            type="text"
+            placeholder="Create New Password"
+            name="name"
+            id="createPasssword"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            id="confirmPassword"
+          />
           <a href="#">Forgot you password?</a>
-          <button>Sign In</button>
+          <button type="submit">Sign In</button>
         </form>
       </div>
 
@@ -51,12 +70,12 @@
             <p>
               to keep connected with us please login with your personal info
             </p>
-            <button class="ghost" id="signIn">Sign In</button>
+            <button class="ghost" type="submit" id="signIn">Sign In</button>
           </div>
           <div class="overlay-panel overlay-right">
             <h1>Hello, Friend!</h1>
             <p>Enter your personal details and start your journey with us</p>
-            <button class="ghost" id="signUp">Sign Up</button>
+            <button class="ghost" type="submit" id="signUp">Sign Up</button>
           </div>
         </div>
       </div>
